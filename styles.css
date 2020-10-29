@@ -1,18 +1,18 @@
 /* Page Layout */
 
 html {
-    max-width: 960px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 40px;
+  max-width: 960px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 canvas {
   background-color: blanchedalmond;
 }
- 
+
 h1,
 h2,
 h3 {
@@ -20,9 +20,9 @@ h3 {
 }
 
 html {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    background-color: whitesmoke;
-  }  
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: whitesmoke;
+}
 
 /* Font Styling */
 
@@ -30,7 +30,6 @@ h1 {
   font-size: 48px;
   color: rgb(13, 132, 202);
 }
-
 
 h2 {
   font-size: 36px;
@@ -44,13 +43,10 @@ h3 {
   margin-top: 20px;
   margin-bottom: 10px;
   color: rgb(13, 132, 202);
-
 }
-
 
 body > h2:nth-child(3) {
   margin-top: 0px;
-  
 }
 
 strong {
@@ -71,7 +67,7 @@ nav > ul {
 }
 
 li {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 body > a {
@@ -90,12 +86,10 @@ nav {
   margin-top: 10px;
   height: fit-content;
   margin-bottom: 10px;
-  
 }
 
 nav > ul {
   display: inline;
-  
 }
 
 nav > ul > li {
@@ -110,10 +104,8 @@ nav > ul > li {
   padding-left: 30px;
   padding-right: 30px;
   border-radius: 10px;
-  background-color: rgba(13, 132, 202, .1);
-
+  background-color: rgba(13, 132, 202, 0.1);
 }
-
 
 body > nav > ul > li > a {
   text-decoration: none;
@@ -128,7 +120,6 @@ body > nav > ul > li > a:hover {
   -ms-transition: color 100ms linear;
   transition: color 100ms linear;
 }
-
 
 iframe {
   width: 100%;
@@ -154,13 +145,14 @@ iframe {
 }
 
 hr {
-  width: 80%;
+  width: 100%;
 }
 
 #projects > a {
   font-style: italic;
   text-decoration: none;
   color: grey;
+  margin-bottom: 10px;
 }
 
 #projects > h3 {
@@ -177,4 +169,15 @@ hr {
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+#projects > ol {
+  margin-left: 30px;
+  list-style: decimal;
+  line-height: 1.5;
+}
+
+#projects > ul {
+  line-height: 1.5;;
 }
