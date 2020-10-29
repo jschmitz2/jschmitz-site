@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Justin Schmitz</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Home</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="https://github.com/jschmitz2">GitHub</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+
+    <h2>Personal Projects</h2>
+
+    <section id="projects">
+      <h3>IIT COVID-19 Dashboard</h3>
+
+      <iframe
+        src="https://covid.justinjschmitz.com"
+        title="IIT COVID-19 Dashboard"
+      ></iframe>
+
+      <p>
+        This project came out of wanting the university to provide some kind of
+        COVID-19 dashboard for students. I didn't end up following through on
+        maintainin the project due to university admin not providing useful
+        data, but here's the site as it was built.
+      </p>
+      <p>
+        It was a useful excercise in learning front-end web development using
+        React, but all of the styling is default Bootstrap styling.
+      </p>
+      <p>
+        I didn't know anything about CSS when making the site, so the Jumbotron
+        element is particularily hacked together - it's actually a rendered
+        image created using Pillow, a Python image library, provided through the
+        backend (FastAPI) and fed in as a background iamge. Yikes.
+      </p>
+
+      <a href="https://github.com/jschmitz2/iit-covid-dashboard"
+        >Check it out on Github</a
+      >
+      <hr />
+
+      <h3>Automated Meal Cleanup Scheduling System</h3>
+
+      <iframe
+        src="http://d41robot.asuscomm.com:5000/"
+        title="Automated Meal Cleanup System"
+      ></iframe>
+
+      <p>
+        Tool, built with Flask front-end, to automatically generate fair
+        schedules for takedowns.
+      </p>
+
+      <p>
+        Note: After every meal at the Fraternity house, three members are
+        assigned to clean up after the meal, based on their class schedule. In
+        the past, this was done by hand, and this tool successfully and fairly
+        automated this process.
+      </p>
+
+      <p>The following constraints exist:</p>
+      <ul>
+        <li>Only one new member may be scheduled at each takedown.</li>
+        <li>A member may only have one takedown in a 10 meal period.</li>
+      </ul>
+
+      <p>The algorithm is based on a two-level greedy choice algorithm.</p>
+
+      <ol>
+        <li>
+          Get all available users who would be available for the takedown.
+        </li>
+        <li>
+          Then, we select the subset of this list that's done the smallest
+          number of takedowns.
+        </li>
+        <li>
+          We then order this list by the number of days since the previous
+          takedown, in most to least, and take the first three subject to
+          constraints.
+        </li>
+      </ol>
+
+      <p>
+        If we run out of users before the takedown is full, run the algorithm
+        again, with all chosen users removed from the pool of all users.
+      </p>
+
+      <a href="https://github.com/aepks/takedowns-projects"
+        >Check it out on Github</a
+      >
+
+      <h3>Simulation of War</h3>
+
+      <p>
+        I simulated the card game War, and did some analytics on the results. My
+        full write-up is too long for this site, but I'll include some of the
+        tastiest image results from it.
+      </p>
+      
+      <figure>
+      <img src="https://raw.githubusercontent.com/jschmitz2/war-card-game-simulation/master/Images/Comparing%20Player%201%20and%20Player%202%20Hand%20Size%2C%20208%20card%20deck.PNG" alt="Graphic of player handsize over 20,000 turns in 16 different games." />
+        <figcaption>A graphic showing the outcomes of 16 different game, given a deck made of four normal decks merged (208 cards, 4 suits). </figcaption>
+    </figure>
+
+    <a href="https://github.com/jschmitz2/war-card-game-simulation/blob/master/README.md"
+    > Check it out on Github
+    </a>
+    </section>
+  </body>
+</html>

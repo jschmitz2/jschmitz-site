@@ -1,0 +1,180 @@
+/* Page Layout */
+
+html {
+    max-width: 960px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+canvas {
+  background-color: blanchedalmond;
+}
+ 
+h1,
+h2,
+h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background-color: whitesmoke;
+  }  
+
+/* Font Styling */
+
+h1 {
+  font-size: 48px;
+  color: rgb(13, 132, 202);
+}
+
+
+h2 {
+  font-size: 36px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: rgb(13, 132, 202);
+}
+
+h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: rgb(13, 132, 202);
+
+}
+
+
+body > h2:nth-child(3) {
+  margin-top: 0px;
+  
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+ul {
+  list-style: circle;
+  margin: 10px 0px 0px 30px;
+}
+
+nav > ul {
+  margin: 0px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+body > a {
+  font-style: italic;
+  text-decoration: none;
+  font-size: 18px;
+  color: grey;
+  margin-top: 10px;
+}
+
+nav {
+  background-color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2px;
+  margin-top: 10px;
+  height: fit-content;
+  margin-bottom: 10px;
+  
+}
+
+nav > ul {
+  display: inline;
+  
+}
+
+nav > ul > li {
+  display: inline-block;
+  height: 40px;
+  transition: background-color 200ms linear;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  margin: 0px 0px 0px 0px;
+  vertical-align: middle;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 10px;
+  background-color: rgba(13, 132, 202, .1);
+
+}
+
+
+body > nav > ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+body > nav > ul > li > a:hover {
+  /* Transition animation: https://stackoverflow.com/questions/4411306/transition-of-background-color */
+  color: rgb(13, 132, 202);
+  -webkit-transition: color 100ms linear;
+  -ms-transition: color 100ms linear;
+  transition: color 100ms linear;
+}
+
+
+iframe {
+  width: 100%;
+  margin-left: auto;
+  align-self: center;
+  height: 400px;
+  margin-bottom: 30px;
+}
+
+#projects {
+  width: 80%;
+  margin-left: 96px;
+}
+
+#projects > p {
+  margin-bottom: 30px;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+#projects > h3 {
+  font-size: 30px;
+}
+
+hr {
+  width: 80%;
+}
+
+#projects > a {
+  font-style: italic;
+  text-decoration: none;
+  color: grey;
+}
+
+#projects > h3 {
+  margin-top: 30px;
+}
+
+#projects > figure > img {
+  width: 100%;
+}
+
+#projects > figure > figcaption {
+  font-style: italic;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
