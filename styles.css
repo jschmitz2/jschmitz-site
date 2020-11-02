@@ -183,8 +183,9 @@ hr {
 
 body {
   padding: 10px;
-  background-color: rgb(200, 200, 200);
+  background-color: rgb(230, 230, 230);
   border-width: 5px;
-  border-color: rgb(220, 220, 220);
+  border-color: rgb(190, 190, 190);
   border-style: solid;
+  border-radius: 3px;
 }
