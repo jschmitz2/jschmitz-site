@@ -9,14 +9,11 @@ html {
   margin-bottom: 40px;
 }
 
-canvas {
-  background-color: blanchedalmond;
-}
-
 h1,
 h2,
-h3 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+h3,
+nav > ul > li {
+  font-family: "Open Sans", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -26,6 +23,23 @@ html {
 
 /* Font Styling */
 
+#about > a:nth-child(5) > img {
+  position: absolute;
+  margin-left: 770px;
+  margin-top: -65px;
+}
+#index_li,
+#index_git {
+  width: 50px;
+  margin-top: -70px;
+}
+
+#index_git {
+  border-radius: 100%;
+  position: absolute;
+  margin-left: 850px;
+}
+
 h1 {
   font-size: 48px;
   color: rgb(13, 132, 202);
@@ -34,17 +48,19 @@ h1 {
 h2 {
   font-size: 36px;
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: rgb(13, 132, 202);
 }
 
 h3 {
   font-size: 24px;
-  margin-top: 20px;
   margin-bottom: 10px;
   color: rgb(13, 132, 202);
 }
-
+body > ul:nth-child(9) {
+  columns: 2;
+  min-width: 100px;
+}
 body > h2:nth-child(3) {
   margin-top: 0px;
 }
@@ -59,28 +75,88 @@ em {
 
 ul {
   list-style: circle;
-  margin: 10px 0px 0px 30px;
+  margin: 10px 0px 30px 30px;
 }
 
 nav > ul {
   margin: 0px;
 }
 
+body > div {
+  columns: 2;
+  column-span: all;
+}
+
 li {
+  font-size: 18px;
   margin: 5px 0;
+}
+
+body > h3.bold_h3 {
+  display: inline;
+  font-weight: bold;
+}
+
+body > h3.italic_h3 {
+  display: inline;
+  font-style: italic;
+}
+body > h3 {
+  display: inline;
+}
+body > h4 {
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+#projects > a > img {
+  position: relative;
+  left: 93%;
+  margin-top: -50px;
+  width: 50px;
+  margin-bottom: 10px;
+  border-radius: 100%;
+  background-color: none;
+  transition: background-color 100ms linear;
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+}
+
+#projects > a > img:hover {
+  background-color: rgb(255, 255, 255);
+  transition: background-color 100ms linear;
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+}
+
+#about > a > img {
+  width: 64px;
+  background-color: none;
+  transition: background-color 100ms linear;
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+}
+
+#about > a > img:hover {
+  background-color: rgb(255, 255, 255);
+  transition: background-color 100ms linear;
+  -webkit-transition: background-color 100ms linear;
+  -ms-transition: background-color 100ms linear;
+}
+
+#projects > ul,
+#projects > ol {
+  margin-top: -25px;
 }
 
 body > a {
   font-style: italic;
-  text-decoration: none;
   font-size: 18px;
   color: rgb(41, 40, 40);
   margin-top: 10px;
 }
 
 nav {
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 2px;
   margin-top: 10px;
   height: fit-content;
@@ -88,33 +164,37 @@ nav {
 }
 
 nav > ul {
-  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
 }
 
 nav > ul > li {
   display: inline-block;
-  height: 40px;
   transition: background-color 200ms linear;
   -webkit-transition: background-color 200ms linear;
   -ms-transition: background-color 200ms linear;
   margin: 0px 0px 0px 0px;
   vertical-align: middle;
-  padding: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
   border-radius: 10px;
   background-color: rgba(13, 132, 202, 0.1);
 }
 
 body > nav > ul > li > a {
-  text-decoration: none;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 40px;
+  display: inline-block;
+
   color: black;
   font-size: 24px;
+  text-decoration: none;
 }
 
-body > nav > ul > li > a:hover {
+body > nav > ul > li:hover {
   /* Transition animation: https://stackoverflow.com/questions/4411306/transition-of-background-color */
-  color: rgb(13, 132, 202);
+  background-color: rgba(255, 255, 255, 0.5);
   -webkit-transition: color 100ms linear;
   -ms-transition: color 100ms linear;
   transition: color 100ms linear;
@@ -127,16 +207,19 @@ iframe {
   height: 400px;
   margin-bottom: 30px;
 }
-
+/* 
+#contact,
+#about,
 #projects {
   width: 80%;
   margin-left: 96px;
-}
-
+} */
+#about > p,
+#contact > p,
 #projects > p {
   margin-bottom: 30px;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #projects > h3 {
@@ -149,7 +232,6 @@ hr {
 
 #projects > a {
   font-style: italic;
-  text-decoration: none;
   color: rgb(41, 40, 40);
   margin-bottom: 10px;
 }
@@ -178,11 +260,11 @@ hr {
 }
 
 #projects > ul {
-  line-height: 1.5;;
+  line-height: 1.5;
 }
 
 body {
-  padding: 10px;
+  padding: 15px;
   background-color: rgb(230, 230, 230);
   border-width: 5px;
   border-color: rgb(190, 190, 190);
